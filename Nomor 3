@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A[10]= {10,22,1,3,12,13,8,20,15,18};
+    int bil;
+
+        for(int i=0;i<10;i++)
+    {
+        cout<<"Index["<<i<<"]: "
+        <<A[i]<<endl;
+    }
+    cout<<endl;
+    cout<<"Masukan Nilai Yang Akan Di Cari: ";
+    cin>>bil;
+
+    for(int j=0;j<10;j++)
+    {
+        if(A[j]==bil)
+        {
+            cout<<"Nilai Yang Di Cari Terdapat Pada Indeks ke-"<<j;
+            break;
+        }
+        else{
+            cout<<"Nilai tidak dapat di temukan";
+            break;
+        }
+    }
+    return 0;
+}
